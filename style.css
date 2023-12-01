@@ -1,0 +1,71 @@
+/* Directiva para fuente de Dafont */
+@font-face {
+    font-family: Reydex;
+    src: url(/Reydex.ttf);
+}
+
+*{
+    /* Color, cambia color de text */
+    color: black;
+    /* Fuente (esta no aparece porque la siguiente la sobreescribe)*/
+    font-family: Reydex;
+    /* Fuente sacada de Google */
+    font-family: 'Roboto', sans-serif;
+    /* Tamaño de la fuente */
+    font-size: 12pt;
+    /* Color de fondo */
+    background-color: transparent;
+    /* Estilo de lista */
+    list-style: none;
+    /* Decoracion de texto */
+    text-decoration: none;
+    /* Sombra de texto PROPIEDAD PROHIBIDA */
+    text-shadow: none;
+    /* Borde, normalmente se usa para ver el boxsize de una pagina web */
+    border: solid 2px red;
+    /* Quitar Outline */
+    outline: none;
+    /* Setear los espacios */
+    margin: 0%;
+    padding: 0%;
+    
+    /* PROPIEDAD QUE DEBE IR TODO EL TIEMPO */
+    box-sizing: border-box;
+
+}
+
+/* Estilo para las listas */
+li{
+    /* Ancho de la caja */
+    /* width: 200px; */
+    /* Alto de la caja */
+    /* height: 50px; */
+    /* Generar color gradiente
+    background-image: linear-gradient(45deg, black, blue); */
+    /* Usar imagen como fondo
+    background-image: url(/Foto_Canal.jpg);*/
+    background-size: 50%; 
+}
+
+.header{
+    padding: 1em;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header .navbar .list{
+    gap: 16pt;
+    
+    display: flex;
+
+    align-items: center;
+}
+
+.right1{
+    text-align: right;
+}
+.right2{
+    text-align: right;
+}
+
