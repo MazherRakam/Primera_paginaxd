@@ -22,7 +22,7 @@
     /* Sombra de texto PROPIEDAD PROHIBIDA */
     text-shadow: none;
     /* Borde, normalmente se usa para ver el boxsize de una pagina web */
-    border: solid 2px red;
+    /* border: solid 2px red; */
     /* Quitar Outline */
     outline: none;
     /* Setear los espacios */
@@ -33,7 +33,10 @@
     box-sizing: border-box;
 
 }
-
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 /* Estilo para las listas */
 li{
     /* Ancho de la caja */
@@ -49,10 +52,16 @@ li{
 
 .header{
     padding: 1em;
+    /* Pega el menu hacia arriba */
+    /* position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%; */
 }
 .header .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header .navbar .list{
     gap: 16pt;
@@ -80,4 +89,36 @@ li{
 }
 .Kassadin{
     display: flex;
+}
+section{
+    padding: 40pt 80pt;
+    justify-content: space-between;
+}
+.contacto{
+    color: #f2f2f2;
+    background-color: #048ABF;
+    border: none;
+    
+}
+button:hover{
+    background-color: #048ABF;
+}
+button{
+    padding: 0.5rem 1.7rem;
+    border: solid 1px #1e1e1e;
+    border-radius: 7px;
+}
+
+p{
+    margin-top: 4pt;
+    margin-bottom: 8pt;
+    max-width: 500px;
+}
+img:hover{
+    /* Agrandado de imagen */
+    transform: scale(1.2);
+}
+img{
+    /* Transicion para agrander imagen */
+    transition: all 0.6s ease-out;
 }
