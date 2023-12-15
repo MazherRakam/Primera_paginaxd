@@ -31,4 +31,8 @@ let objeto= {
 // setTimeout( Callback, 5000 )
 
 axios.get("https://leonardoapi.onrender.com/music")
-    .then((res) => console.log(res.data))
+    .then((res) => {
+        res.data.map((song) => {
+            console.log(song.title)
+        })
+    } )
